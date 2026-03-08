@@ -36,10 +36,17 @@ footer{text-align:center;padding:30px;margin-top:40px;color:#777}
 
 <div class="price">$29.99</div>
 
-<button onclick="alert('Connect this button to Stripe, PayPal, or Shopify checkout to start selling.')">Buy Now</button>
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAPB9WaypozRtqDNPzIdpC8RlqJwtC1Mlt15wNZslcbPBeDfjWZ0TtekFpGV8C3MfSqE2dE63Y4xTlzVI&components=hosted-buttons&disable-funding=venmo&currency=CAD">
+</script>
 
 <p style="margin-top:10px;font-size:14px;color:#666">Free shipping worldwide</p>
-</div>
+<div id="paypal-container-5W3JK4ULCGVRU"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "5W3JK4ULCGVRU",
+  }).render("#paypal-container-5W3JK4ULCGVRU")
+</script>
 </div>
 
 <div class="features">
